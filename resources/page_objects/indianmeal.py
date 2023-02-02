@@ -34,7 +34,7 @@ class IndianMeal(BasePage):
 
 
     def click_indianMealKitSub(self):
-        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[11]/div/a/div/img')
+        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[4]/div/a/div/div/h3')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_LeftArrow(self):
@@ -217,37 +217,37 @@ class IndianMeal(BasePage):
 
     def click_Bisibelebath(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[1]/div[3]/div[3]/a')
+            '/html/body/div[13]/div/div/div[1]/div[3]/div[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_PlusBisibelebath(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[1]/p/a/span[3]')
+            '/html/body/div[13]/div/div/div[1]/p/a/span[3]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MinusBisiblebath(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[1]/p/a/span[1]')
+            '/html/body/div[13]/div/div/div[1]/p/a/span[1]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MasalaBhindi(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[6]/div[3]/div[3]/a')
+            '/html/body/div[13]/div/div/div[9]/div[3]/div[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Pudinarice(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[25]/div[3]/div[3]/a')
+            '/html/body/div[13]/div/div/div[35]/div[3]/div[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_DalFry(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[3]/div[3]/div[3]/a')
+            '/html/body/div[13]/div/div/div[4]/div[3]/div[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_DetailsMisalpav(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[9]/div[3]/div[1]/a')
+            '/html/body/div[13]/div/div/div[13]/div[3]/div[1]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_CloseDetailsMisalpav(self):
@@ -257,12 +257,12 @@ class IndianMeal(BasePage):
 
     def click_AddGajarhalwa(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[5]/div[3]/div[3]/a')
+            '/html/body/div[13]/div/div/div[6]/div[3]/div[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_PlusGajarhalwa(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[12]/div/div/div[5]/p/a/span[3]')
+            '/html/body/div[13]/div/div/div[6]/p/a/span[3]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Bisibelebath2(self):
