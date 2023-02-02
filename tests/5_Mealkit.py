@@ -33,12 +33,12 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
     actual19 = "Indian Meal Kit Delivery"
     actual20 = "10 Meal Kit"
     actual21 = "20 Meal Kit"
-    actual22 = "Bisibelebath + Papad"
-    actual23 = "Dal Chawal + Papad"
-    actual24 = "Dal Fry + 2 Rotis"
-    actual25 = "Dal Makhani + 2 Rotis"
-    actual26 = "Gajar Halwa"
-    actual27 = "Masala Bhindi + 2 Rotis"
+    actual22 = "Bisibelebath"
+    actual23 = "Chutney(Pack of 3)"
+    actual24 = "Dal Chawal"
+    actual25 = "Dal Fry"
+    actual26 = "Dal Makhani"
+    actual27 = "Gajar Halwa"
 
     @classmethod
     def setUpClass(cls):
@@ -64,7 +64,7 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
     def test_EnterZipCode(self):
         self.mealkit_page.zip("60611")
         self.mealkit_page.submit_zip()
-        self.Signin()
+        # self.Signin()
         search = self.mealkit_page.get_attribute(IndianMealKit.SearchForProducts, 'placeholder')
         print(search)
         self.assertEqual(self.actual3, search)
@@ -96,7 +96,7 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
         self.mealkit_page.click_MasalaBhindi()
         self.mealkit_page.click_Pudinarice()
         self.mealkit_page.click_AddGajarhalwa()
-        # self.mealkit_page.click_AddToCart()
+        self.mealkit_page.click_AddToCart()
         # self.mealkit_page.click_Indianmealkitdelivery()
         time.sleep(10)
 
