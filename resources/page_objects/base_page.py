@@ -21,6 +21,7 @@ from selenium.webdriver import Remote
 from selenium import webdriver
 from resources.config_methods import DataClass
 from resources.locators import CommonLocators
+from selenium.webdriver import FirefoxOptions
 
 
 class BasePage:
@@ -55,8 +56,10 @@ class BasePage:
                 chrome_options.add_argument("--headless")
         caps = selenium.webdriver.DesiredCapabilities.CHROME.copy()
         caps.update(env.get_config_value('webdriver', 'desired_capabilities'))
+        opts = FirefoxOptions()
+        opts.add_argument("--headless")
         #driver = selenium.webdriver.Chrome(options=chrome_options, desired_capabilities=caps, executable_path=r"/root/drivers/chromedriver")
-        driver = webdriver.Firefox(executable_path="/root/Downloads/geckodriver")
+        driver = webdriver.Firefox(options=opts, executable_path="/root/Downloads/geckodriver")
         driver.maximize_window()
         driver.implicitly_wait(20)
         driver.set_page_load_timeout(cls.page_load_timeout)
