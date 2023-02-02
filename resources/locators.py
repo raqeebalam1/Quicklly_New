@@ -352,6 +352,13 @@ class Department:
     BeefTaco = (By.XPATH, '//*[@id="load_data"]/div[12]/div/div[2]/h3')
     Tikka = (By.XPATH, ' //*[@id="load_data"]/div[25]/div/div[2]/h3')
     Biryani = (By.XPATH, '//*[@id="load_data"]/div[29]/div/div[2]/h3')
+    #HOME MADE FOOD#
+    labelKadaiPaneer = (By.XPATH, '//*[@id="shefdata"]/div[1]/div[1]')
+    labelBaingan = (By.XPATH, '//*[@id="shefdata"]/div[2]/div[1]')
+    labelChickentikka = (By.XPATH, '//*[@id="shefdata"]/div[3]/div[1]')
+    labelButterboneless = (By.XPATH, '//*[@id="shefdata"]/div[4]/div[1]')
+    labelShahipaneer = (By.XPATH, '//*[@id="shefdata"]/div[5]/div[1]')
+    labelcabbage = (By.XPATH, '//*[@id="shefdata"]/div[6]/div[1]')
 
     Aloosam = (By.XPATH, '//*[@id="load_data"]/div[2]/div/div[2]/a')
     submitAlooSam = (By.XPATH, '//*[@id="dvDialog-DateTime"]/div/div[2]/a')
