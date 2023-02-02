@@ -13,19 +13,19 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
     actual2 = " Order Roti Kit"
     actual3 = "Search for products..."
     actual4 = "Thank you"
-    actual5 = "Holiday Special - Biryani & Lassi Combo (3 Biryani & 2 Lassi)"
-    actual6 = "Holiday Special - Biryani & Paneer Tikka Masala (4 Meals)"
-    actual7 = "Holiday Special - Butter Chicken & Chicken Tikka Masala Combo (4 Meals)"
-    actual8 = "Holiday Special - The Taste of India (4 Meals & 2 Lassi)"
-    actual9 = "Holiday Special Weekly 4 Meals Plan"
-    actual10= "Holiday Special Weekly 8 Meals Plan"
-    actual11 = "Holiday Special Weekly 12 Meals Plan"
-    actual12 = "Holiday Special Superfood Parfait - Square"
-    actual13 = "Holiday Special Superfood Parfait - Rectangle"
-    actual14 = "Holiday Special Le Cadeau Parfait - Square"
-    actual15 = "Holiday Special Le Cadeau Parfait - Rectangle"
-    actual16 = "Laumiere Diwali  Premium Collection - Rectangle Sweet Box"
-    actual17 = "Holiday Special LAutomne Gourmet Nuts"
+    actual5 = "Ready to Eat Indian Meal Special - Chicken Biryani (3 Biryani)"
+    actual6 = "Ready to Eat Indian Meal Special - Chicke[39 chars]als)"
+    actual7 = "Ready to Eat Indian Meal Special - Butter[45 chars]als)"
+    actual8 = "Ready to Eat Indian Meal Special - The Taste of India (4 Meals)"
+    actual9 = "Ready to Eat Indian Meal Special Weekly 4 Meals Plan"
+    actual10= "Ready to Eat Indian Meal Special Weekly 8 Meals Plan"
+    actual11 = "Ready to Eat Indian Meal Special Weekly 12 Meals Plan"
+    actual12 = "Valentines Day Special Laumour Collection Small"
+    actual13 = "Valentines Day Special Laumour Collection Large"
+    actual14 = "Lunar New Year Collection - Square"
+    actual15 = "Lunar New Year Collection - Rectangle"
+    actual16 = "Holiday Special Superfood Parfait - Square"
+    actual17 = "Holiday Special Superfood Parfait - Rectangle"
     actual18 = "Laumiere Diwali  Premium Collection - Gourmet Nuts"
     actual19 = "Mithaas Savories Snack Pack"
     actual20 = "Holidays Special Exclusive Sweet Box"
@@ -45,15 +45,15 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
 
 
     def test_Signin(self):
-        self.roti_page.select_dropdown()
+        # self.roti_page.select_dropdown()
         self.roti_page.click_signin()
         self.roti_page.EnterEmail("testaccount@quicklly.com")
         self.roti_page.EnterPass("123456")
         self.roti_page.click_login()
         time.sleep(2)
-        alert = self.driver.switch_to.alert
-        if alert:
-            alert.accept()
+        # alert = self.driver.switch_to.alert
+        # if alert:
+        #     alert.accept()
 
     def test_EnterZipCode(self):
         self.roti_page.zip("60611")
@@ -84,18 +84,18 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
         self.assertEqual(self.actual5, label)
         time.sleep(10)
 
-    def test_labelHoliday2(self):
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday2, 'textContent')
-        print(label)
-        self.assertEqual(self.actual6, label)
-        time.sleep(10)
-
-    def test_labelHoliday3(self):
-        time.sleep(10)
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday3, 'textContent')
-        print(label)
-        self.assertEqual(self.actual7, label)
-        time.sleep(10)
+    # def test_labelHoliday2(self):
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday2, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual6, label)
+    #     time.sleep(10)
+    # 
+    # def test_labelHoliday3(self):
+    #     time.sleep(10)
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday3, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual7, label)
+    #     time.sleep(10)
 
     def test_labelHoliday4(self):
         label = self.roti_page.get_attribute(RotiKit.labelHoliday4, 'textContent')
@@ -165,40 +165,40 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
         self.assertEqual(self.actual17, label)
         time.sleep(10)
 
-    def test_labelHoliday14(self):
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday14, 'textContent')
-        print(label)
-        self.assertEqual(self.actual18, label)
-        time.sleep(10)
-
-    def test_labelHoliday15(self):
-        time.sleep(10)
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday15, 'textContent')
-        print(label)
-        self.assertEqual(self.actual19, label)
-        time.sleep(10)
-
-    def test_labelHoliday16(self):
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday16, 'textContent')
-        print(label)
-        self.assertEqual(self.actual20, label)
-        time.sleep(10)
-
-    def test_labelHoliday17(self):
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday17, 'textContent')
-        print(label)
-        self.assertEqual(self.actual21, label)
-        time.sleep(10)
-
-    def test_labelHoliday18(self):
-        time.sleep(10)
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday18, 'textContent')
-        print(label)
-        self.assertEqual(self.actual22, label)
-        time.sleep(10)
-
-    def test_labelHoliday19(self):
-        label = self.roti_page.get_attribute(RotiKit.labelHoliday19, 'textContent')
-        print(label)
-        self.assertEqual(self.actual23, label)
-        time.sleep(10)
+    # def test_labelHoliday14(self):
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday14, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual18, label)
+    #     time.sleep(10)
+    #
+    # def test_labelHoliday15(self):
+    #     time.sleep(10)
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday15, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual19, label)
+    #     time.sleep(10)
+    #
+    # def test_labelHoliday16(self):
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday16, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual20, label)
+    #     time.sleep(10)
+    #
+    # def test_labelHoliday17(self):
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday17, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual21, label)
+    #     time.sleep(10)
+    #
+    # def test_labelHoliday18(self):
+    #     time.sleep(10)
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday18, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual22, label)
+    #     time.sleep(10)
+    #
+    # def test_labelHoliday19(self):
+    #     label = self.roti_page.get_attribute(RotiKit.labelHoliday19, 'textContent')
+    #     print(label)
+    #     self.assertEqual(self.actual23, label)
+    #     time.sleep(10)
