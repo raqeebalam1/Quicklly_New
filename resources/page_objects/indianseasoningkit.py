@@ -28,7 +28,7 @@ class Indian(BasePage):
 
     def click_indianSeasoning(self):
         # element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="Seasoning Kit"]')
-        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[8]/div/a/div/div/h3')
+        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[9]/div/a/div/div/h3')
         self.driver.execute_script("arguments[0].click();", element)
 
 
