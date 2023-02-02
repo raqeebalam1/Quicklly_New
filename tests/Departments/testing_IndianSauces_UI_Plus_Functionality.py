@@ -63,20 +63,20 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         print(thankYou)
 
     def Signin(self):
-        self.sauces_page.select_dropdown()
+        # self.sauces_page.select_dropdown()
         self.sauces_page.click_signin()
         self.sauces_page.EnterEmail("testaccount@quicklly.com")
         self.sauces_page.EnterPass("123456")
         self.sauces_page.click_login()
         time.sleep(2)
-        alert = self.driver.switch_to.alert
-        alert.accept()
-        time.sleep(2)
+        # alert = self.driver.switch_to.alert
+        # alert.accept()
+        # time.sleep(2)
 
     def test_EnterZipCode(self):
         self.sauces_page.zip("60611")
         self.sauces_page.submit_zip()
-        self.Signin()
+        # self.Signin()
         search = self.sauces_page.get_attribute(IndianMealKitAndSauces.SearchForProducts, 'placeholder')
         print(search)
         self.assertEqual(self.actual3, search)
@@ -88,8 +88,8 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
         self.sauces_page.click_Readytoeat()
-        self.sauces_page.click_Selectproducts()
-        self.sauces_page.click_Oragnicsauces()
+        self.sauces_page.click_SimmerSauces()
+        # self.sauces_page.click_Oragnicsauces()
         # self.sauces_page.click_Sauces()
         # label = self.sauces_page.get_attribute(IndianMealKitAndSauces.instantPot, 'innerHTML')
         # print(label)
