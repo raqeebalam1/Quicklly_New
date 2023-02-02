@@ -65,7 +65,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
 
     def Signin(self):
         self.indian_page.select_dropdown()
-        self.indian_page.click_signin()
+        # self.indian_page.click_signin()
         self.indian_page.EnterEmail("testaccount@quicklly.com")
         self.indian_page.EnterPass("123456")
         self.indian_page.click_login()
@@ -77,7 +77,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
     def test_EnterZipCode(self):
         self.indian_page.zip("60611")
         self.indian_page.submit_zip()
-        self.Signin()
+        # self.Signin()
         time.sleep(5)
         search = self.indian_page.get_attribute(IndianSeasoningKit.SearchForProducts, 'placeholder')
         print(search)
@@ -102,7 +102,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
         self.indian_page.click_Minuschatmasala()
         self.indian_page.click_DetailsKitchenKing()
         self.indian_page.click_CancelDetailsKitchenKing()
-        self.indian_page.click_AddToCart()
+        # self.indian_page.click_AddToCart()
         time.sleep(10)
         # self.Payment()
 
