@@ -29,7 +29,12 @@ class Sauces(BasePage):
 
     def click_Readytoeat(self):
         element = self.driver.find_element_by_xpath(
-            '//*[@id="home"]/div/div[6]/div/a/div/div/h3')
+            ' // *[ @ id = "home"] / div / div[7] / div / a / div / div / h3')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_SimmerSauces(self):
+        element = self.driver.find_element_by_xpath(
+            '//*[@id="searchhide"]/section[1]/div/div/div[2]/div/div[5]/form/button[1]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Selectproducts(self):
